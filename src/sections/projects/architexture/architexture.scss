@@ -1,0 +1,139 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Grande', Verdana, Arial;
+    font-size: 3px;
+    /* background-image: -gradient(135deg,  rgba(255linear,255,255,1) 1%,rgba(255,255,255,0.31) 47%,rgba(255,255,255,0.16) 57%,rgba(255,255,255,0) 68%); */
+    background: linear-gradient(black, grey);
+     /* -webkit-gradient(linear,
+                          50% 500, 1,
+                          50% 500, 400,
+                          from(rgba(255, 255, 255, 0.6)),
+                          to(rgb(0, 0, 0))); */
+   background-repeat: no-repeat;
+  }
+ 
+  #container {
+    width: 100%;
+    height: 33%;
+    -webkit-perspective: 900; /* For compatibility with iPhone 3.0, we leave off the units here */
+    -webkit-perspective-origin: 50% 500px;
+ 
+  }
+  #stage {
+    width: 50%;
+    height: 50%;
+    /* -webkit-transition: -webkit-transform 2s; */
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: spinX 5s 1 linear;
+    -webkit-animation: spinZ 5s 1 linear;
+    
+  }
+  
+  #hi-box {
+    top: 10vw;
+  }
+  #mid-box {
+    top: 10vw;
+    /* padding: .5vw 0; */
+  }
+  #low-box {
+    top: 10vw;
+  }
+ 
+ 
+  .plane {
+    position: absolute;
+    height: 8vw;
+    width: 8vw;
+    /* border: 1px solid white; */
+    /* -webkit-border-radius: 12px; */
+    -webkit-box-sizing: border-box;
+    text-align: center;
+    font-family: Times, serif;
+    overflow: hidden;
+    
+    font-size: 10pt;
+    -ms-text-justify: distribute;
+    /* color: black; */
+    background-color: rgba(255, 255, 255, 0.05);
+    -webkit-transition: -webkit-transform 20s, opacity 2s;
+    -webkit-backface-visibility: hidden;
+  }
+ 
+  .backfaces .plane {
+    -webkit-backface-visibility: visible;
+    
+    
+  }
+  
+  #form-1 #hi-box, #form-1 #mid-box, #form-1 #low-box {
+      position: relative;
+      margin: 0 auto;
+      height: 10vw;
+      width: 10vw;
+      -webkit-transform-style: preserve-3d;
+  }
+ 
+  #hi-box,  #mid-box, #low-box {
+    /* -webkit-animation: spinY 10s infinite linear; */
+ 
+    /* ---------------- infinite ----------- */
+  }
+ 
+  @-webkit-keyframes spinY {
+    from { -webkit-transform: rotateY(0); }
+      to   { -webkit-transform: rotateY(-360deg);}
+  }
+  @-webkit-keyframes spinZ {
+      from { -webkit-transform: rotateZ(0);}
+      to   { -webkit-transform: rotateZ(-360deg);}
+  }
+  @-webkit-keyframes spinX {
+      from { -webkit-transform: rotateX(0);}
+      to   { -webkit-transform: rotateX(-360deg);}
+  }
+  /* .inner {transform: rotateX(-90deg); overflow-y: hidden; overflow-block:inherit; word-wrap: break-word;  } */
+  .hot { color: rgba(255, 43, 117, 0.5); }
+  .cold { color: rgba(43, 156, 255, 0.3); }
+      /* padding: 0 2vw; */
+  /* .inner .panel::content { height: 5em !important; }
+  .outer .panel::content  { width: 5em !important; } */
+ 
+  #hi-box .cold { 
+      /* width: 11vw;  */
+  }
+  #mid-box .cold {  }
+  #low-box .cold {  }
+ 
+  #hi-box .hot {  }
+  #mid-box .hot {  }
+  #low-box .hot {  }
+ 
+  .cold.hole, .hot.hole { 
+      background: transparent; border-width: .5vw ; border-color: rgba(255, 255, 255, 0.05)  ; /*  // rgb(246, 255, 84); */
+  }
+  #hi-box .cold.hole,
+  #mid-box .hot.hole,
+  #low-box .cold.hole { border-style: solid;}
+ 
+  
+  /* ---------- hot cube styles ------------- */
+ 
+  .cube  .one { -webkit-transform: scale3d(1.3, 1.3, 1.3) rotateX(90deg) translateZ(100px); }
+  .cube  .two { -webkit-transform: scale3d(1.3, 1.3, 1.3) translateZ(100px); }
+  .cube  .three { -webkit-transform: scale3d(1.3, 1.3, 1.3) rotateY(90deg) translateZ(100px); }
+  .cube  .four { -webkit-transform: scale3d(1.3, 1.3, 1.3) rotateY(180deg) translateZ(100px); }
+  .cube .five { -webkit-transform: scale3d(1.3, 1.3, 1.3) rotateY(-90deg) translateZ(100px); }
+  .cube  .six { -webkit-transform: scale3d(1.3, 1.3, 1.3) rotateX(-90deg) translateZ(100px); }
+ 
+  .cube  .seven { -webkit-transform: scale3d(1.15, 1.15, 1.15) rotateX(90deg) translateZ(100px); }
+  .cube  .eight { -webkit-transform: scale3d(1.15, 1.15, 1.15) translateZ(100px); }
+  .cube  .nine { -webkit-transform: scale3d(1.15, 1.15, 1.15) rotateY(90deg) translateZ(100px); }
+  .cube  .ten { -webkit-transform: scale3d(1.15, 1.15, 1.15) rotateY(180deg) translateZ(100px); }
+  .cube  .eleven { -webkit-transform: scale3d(1.15, 1.15, 1.15) rotateY(-90deg) translateZ(100px); }
+  .cube  .twelve { -webkit-transform: scale3d(1.15, 1.15, 1.15) rotateX(-90deg) translateZ(100px); }
+ 
+ 
+ 
+ 

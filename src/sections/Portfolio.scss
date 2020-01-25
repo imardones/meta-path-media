@@ -1,0 +1,87 @@
+@import '../App.scss';
+
+#portfolio {
+    @include foreground(.7);
+    display: grid;
+    grid-template-columns: auto;
+
+    h2 {
+        grid-column: 1 / span 1;
+    }
+
+    .sub-section {
+
+        .sub-section {
+            min-width: calc(100% - 4vmax);
+            width: 100%;
+            max-width: calc(100% - 72vmax);;
+        }
+
+
+        li {
+            white-space: nowrap;
+            flex-wrap: nowrap;
+            width: fit-content;
+            padding: 0 .5em 1em 0;
+        }
+
+    }
+
+    #player { 
+        display:none;
+        background-color: rgba($color-inverse, 1);
+        border: medium solid #666666;
+        height: 400px;
+        left: 200px;
+        position: absolute;
+        top: 220px;
+        width: 792px;
+        -moz-border-radius: 3px;
+        box-shadow: 2px 2px 5px 1px #000;
+        -moz-box-shadow: 2px 2px 5px 1px #000;
+        z-index:40;
+    }
+
+    .port_group { 
+        text-transform:uppercase; 
+        padding-left:100px;
+    }
+
+    @media screen and (min-width: 550px) {
+
+            grid-template-columns: auto auto;
+
+            h2 {
+                grid-column: 1 / span 2;
+            }
+
+    }
+
+    @media screen and (min-width: 1000px) {
+
+        grid-template-columns: auto auto auto auto;
+        h2 {
+            grid-column: 1 / span 4;
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+	
+	
+
+
+
+	

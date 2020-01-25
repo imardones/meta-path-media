@@ -1,0 +1,221 @@
+@import '../App.scss';
+
+#projects {
+    // @include foreground(.2);
+    // backdrop-filter: blur(4);
+   
+    // z-index: 3;
+    // position: relative;
+    .ring {
+        @include gradient-r();
+        padding: 1vw 0;
+        // backdrop-filter: invert(1);
+        box-shadow: 10px 10px 603px -1px rgba(246, 255, 120, 0.1);
+
+    }
+
+    // .ring-1 { backdrop-filter: hue-rotate( 180deg ); box-shadow: 10px 10px 603px -1px rgba(255, 247, 25, .7);}
+    // .ring-2 { backdrop-filter: hue-rotate( 120deg ); box-shadow: 10px 10px 603px -1px rgba(25, 255, 56, 0.7); padding: 0;}
+    // .ring-3 { backdrop-filter: hue-rotate( 140deg ); box-shadow: 10px 10px 603px -1px rgba(65, 205, 236, 0.7);}
+    // .ring-4 { backdrop-filter: hue-rotate( 120deg ); box-shadow: 10px 10px 603px -1px rgba(255, 247, 25, .7);}
+    // .ring-5 { backdrop-filter: hue-rotate( 100deg ); box-shadow: 10px 10px 603px -1px rgba(255, 247, 25, .7);}
+    // .ring { backdrop-filter: hue-rotate( 80deg ); box-shadow: 10px 10px 603px -1px rgba(255, 247, 25, .2);}
+    // .ring-7 { backdrop-filter: hue-rotate( 260deg ); box-shadow: 10px 10px 603px -1px rgba(255, 247, 25, .2);}
+    // .ring-8 { backdrop-filter: hue-rotate( 40deg ); box-shadow: 10px 10px 603px -1px rgba(255, 247, 25, .2);}
+    // .ring-9 { backdrop-filter: hue-rotate( 20deg ); box-shadow: 10px 10px 603px -1px rgba(255, 247, 25, .2);}
+    // .ring-final { backdrop-filter: hue-rotate( 320deg );
+    //     box-shadow: 10px 10px 603px -1px rgba(255, 247, 25, .2);
+    //     -webkit-box-shadow: inset 10px 10px 63px -6px rgba(235,26,235,.2);
+    //     -moz-box-shadow: inset 10px 10px 63px -6px rgba(235,26,235,.2);
+    //     box-shadow: inset 10px 10px 63px -6px rgba(235,26,235,.2);
+    // }
+
+
+
+    .section-head {
+        
+        .filters {
+
+            select {
+                @include cta-material($corner, $corner, $corner, $corner);
+                color: $color-inverse;
+                padding: .5em;
+                font-family: $font-family;
+                font-size: .8em;
+            }
+            select:after {
+                position: absolute;
+                content: "v";
+                top: 14px;
+                right: 10px;
+                width: 0;
+                height: 0;
+                // color: $color-inverse;
+                // border: 6px solid transparent;
+                // border-color: #fff transparent transparent transparent;
+            }
+        }
+    }
+
+    .projects .subsection {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+          "header header header filters filters filters"
+          "prod prod prod prod prod prod"
+          "prod prod prod prod prod prod"
+          "prod prod prod prod prod prod"
+          "prod prod prod prod prod prod";
+          grid-column-gap: 2vw;
+          grid-row-gap: 2vw;
+
+
+          button {
+            padding: 1vh 1vw 3vh 1vw;
+            border: 0;
+            height: 10vh;
+            max-width: 15.5vw;
+            width: -webkit-fill-available;
+            color: rgba($color-dark, 0.9);
+            
+            @include corners($corner, $corner, $corner, $corner);
+            @include cta-material($corner, $corner, $corner, $corner);
+            // background-image: none;
+            background-size: 80% auto;
+            // background-position: 10px 5px; 
+            box-shadow: 0 4px 8px 0 rgba($color-highlight, 0.2), 0 6px 20px 0 rgba($color-highlight, 0.19);
+            // filter: invert(1);
+            // background-size: contain;
+            
+            background-repeat: no-repeat;
+            background-position-x: 50%;
+            background-position-y: 90%;
+            min-height: 100px;
+            // margin: 0 1vh 1vh 0;
+    
+        img {
+            width: 100%;
+            height: auto;
+            opacity: .2;
+            // filter: invert(1);
+            // filter: invert(1);
+        }
+    
+        h4 {
+            filter: invert(1);
+            color: $color-dark;
+            padding: .5em;
+        }
+
+
+        @media screen and (min-width: 550px) {
+
+            grid-template-columns: auto auto auto auto;
+
+            // h2 {
+            //     grid-column: 1 / span 2;
+            // }
+
+    }
+
+    @media screen and (min-width: 1000px) {
+
+        grid-template-columns: auto auto auto auto auto;
+        h2 {
+            grid-column: 1 / span 2;
+        }
+        .filters {
+            grid-column: 3 / span 3;
+        }
+
+
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        grid-template-columns: auto auto auto auto auto auto;
+        h2 {
+            grid-column: 1 / span 3;
+        }
+        .filters {
+            grid-column: 4 / span 3;
+        }
+    }
+    }
+
+
+
+
+
+    // .sub-section {
+
+    //     .sub-section {
+    //         min-width: calc(100% - 4vmax);
+    //         width: 100%;
+    //         max-width: calc(100% - 72vmax);;
+    //     }
+
+
+    //     li {
+    //         white-space: nowrap;
+    //         flex-wrap: nowrap;
+    //         width: fit-content;
+    //         padding: 0 .5em 1em 0;
+    //     }
+
+    // }
+
+    // #player { 
+    //     display:none;
+    //     background-color: rgba($color-inverse, 1);
+    //     border: medium solid #666666;
+    //     height: 400px;
+    //     left: 200px;
+    //     position: absolute;
+    //     top: 220px;
+    //     width: 792px;
+    //     -moz-border-radius: 3px;
+    //     box-shadow: 2px 2px 5px 1px #000;
+    //     -moz-box-shadow: 2px 2px 5px 1px #000;
+    //     z-index:40;
+    // }
+
+    // .port_group { 
+    //     text-transform:uppercase; 
+    //     padding-left:100px;
+    // }
+
+
+
+}
+
+
+
+
+
+
+
+.projects {
+    .project {
+        
+        // justify-self: stretch;
+        // // filter: invert(1);
+        // // filter: saturate(1.3);
+        // filter: contrast(1.1);
+        // width: 15vw;
+        // background-size: 80% auto;
+        // background-position: 10px 5px; 
+        // background-repeat: no-repeat;
+    
+        
+    
+        
+    
+
+    
+        
+    }
+    
+    }
+    }

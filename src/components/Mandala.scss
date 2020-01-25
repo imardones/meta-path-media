@@ -1,0 +1,75 @@
+@import '../App.scss';
+
+.mandala {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    overflow: auto;
+    color: $color-highlight;
+    display: block;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    right: 0 !important;
+    top: 0 !important;
+    left: 0 !important;
+    // will-change: transform;
+    // backdrop-filter: blur(3px);
+    
+    // invert(.7) saturate(300%) blur(3px) contrast(100%);
+    
+
+    .low, .mid, .hi {  
+        fill: none;
+        stroke-width: 0.2;
+    }
+
+    .hi { stroke: $color-cta; }
+    .mid { stroke: $color-standard; }
+    .low { stroke: $color-highlight; }
+
+    .mask {
+        background-color: rgba($color-inverse, 1);
+        clip-path: ellipse(25% 30% at 40% 40%);
+        fill: rgba($color-inverse, 1);
+    }
+
+    .mesh-1, .mesh-2, .mesh-3 {
+        transform-origin: center;
+        // transform-origin: inherit;
+        transform: scale(12);
+    }
+
+    use.mesh-1 { animation: ani-1 50s linear infinite; }
+    use.mesh-2 { animation: ani-2 50s linear infinite; }
+    use.mesh-3 { animation: ani-3 50s linear infinite; }
+
+    @keyframes ani-1 {
+        0% { transform: scale(2); }
+        50% { transform: scale(3.5); }
+        100% { transform: scale(2); }
+    }
+
+    @keyframes ani-2 {
+        0% { transform: scale(2)rotate(1deg)skewX(1deg);}
+        33% { transform: scale(3)rotate(180deg)skewX(90deg); }
+        66% { transform: scale(3)rotate(180deg)skewX(-90deg); }
+        100% { transform: scale(2)rotate(360deg)skewX(1deg); }
+    }
+
+    @keyframes ani-3 {
+        0% { transform: rotate(-1deg)scale(3); transform-origin: center; }
+        25% { transform: rotate(-90deg)scale(2.3); }
+        75% { transform: rotate(-180deg)scale(8); }
+        100% { transform: rotate(-360deg)scale(3);transform-origin: left; }
+    }
+
+    @keyframes ani-mask {
+        0% { transform: scale(2); }
+        50% { transform: scale(3.5); }
+        100% { transform: scale(2); }
+    }
+
+}

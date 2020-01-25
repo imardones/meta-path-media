@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 400 400" 
+      
+        xml:space="preserve">
+        <style type="text/css">
+
+            .a, .b { transform-origin: 50% 50%; fill: none; stroke-width: 0.25; stroke-miterlimit: 10; }
+            .a { stroke: #808080; }
+            .b { stroke: #5AC2AA; }
+
+            use.a {
+                animation: ani-a 6s linear infinite;
+            }
+            use.b {
+                animation: ani-b 8s linear infinite;
+            }
+
+            @keyframes ani-a {
+                0% { transform: scale(.8); }
+                25% { transform: rotate(80); }
+                50% { transform: scale(1.1); }
+                100% { transform: rotate(360); }
+            }
+            @keyframes ani-b {
+                0% { transform: scale(1); }
+                25% { transform: rotate(-180); }
+                50% { transform: scale(.6); }
+                100% { transform: rotate(-360); }
+            }
+
+        </style>
+        <defs>
+            <pattern id="netpattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse" >
+                <path class="a" d="M5,0A5,5,0,0,1,0,5" />
+                <path class="a" d="M10,5A5,5,0,0,1,5,0" />
+                <path class="a" d="M0,5a5,5,0,0,1,5,5" />
+                <path class="a" d="M5,10a5,5,0,0,1,5-5" />
+                <circle class="b" cx="5.13" cy="5.13" r="5"/>
+            </pattern>
+        </defs>
+
+        <rect id="layer-a" x="0" y="0" width="100%" height="100%" fill="url(#netpattern)" />
+        <rect id="layer-b" x="5" y="5" width="100%" height="100%" fill="url(#netpattern)" />
+
+          <g id="bnet" >
+            <use class="a" xlink:href='#layer-a'/>
+            <use class="b" xlink:href='#layer-b'/>
+        </g>
+        
+    </svg>
+
+
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <defs>
+        <pattern id="bnet" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse" >
+            <style>.a,.b{fill:none;stroke-miterlimit:10;stroke-width:0.5px;}.a{stroke:gray;}.b{stroke:#5ac2aa;}</style>
+            <title>bnet</title>
+         <path class="a" d="M965,619a5,5,0,0,1-25,25" transform="translate(-9.3975 -6.1875)"/>
+            <path class="a" d="M990,644a5,5,0,0,1-25-25" transform="translate(-9.3975 -6.1875)"/>
+            <path class="a" d="M940,644a5,5,0,0,1,25,25" transform="translate(-9.3975 -6.1875)"/>
+            <path class="a" d="M965,669a5,5,0,0,1,25-25" transform="translate(-9.3975 -6.1875)"/>
+            <circle class="b" cx="5.5" cy="5.5" r="25"/>
+            
+<path class="a" d="M965,619a25,25,0,0,1-25,25" transform="translate(-939.75 -618.75)"/>
+<path class="a" d="M990,644a25,25,0,0,1-25-25" transform="translate(-939.75 -618.75)"/>
+<path class="a" d="M940,644a25,25,0,0,1,25,25" transform="translate(-939.75 -618.75)"/>
+<path class="a" d="M965,669a25,25,0,0,1,25-25" transform="translate(-939.75 -618.75)"/>
+<circle class="b" cx="25.25" cy="25.25" r="25"/></svg>
+
+
+
+        </pattern>
+    </defs>
+    <rect id="mesh1" x="5" y="5" width="100%" height="100%" fill="url(#bnet)" />
+    <rect id="mesh2" x="0" y="0" width="100%" height="100%" fill="url(#bnet)" />
+</svg> -->

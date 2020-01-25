@@ -1,11 +1,26 @@
 {
   "name": "meta-path-media",
-  "version": "0.1.0",
+  "version": "3.5.0",
   "private": true,
+  "description": "MetaPath.Media: percolating interactivities & metadata",
+  "homepage": "http://metapath.media/",
+  "license": "UNLICENSED",
+  "author": "Ignacio Mardones <imiggie@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imardones/meta-path-media"
+  },
   "dependencies": {
+    "install": "^0.13.0",
+    "node-sass": "^4.13.0",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0"
+    "react-icons": "^3.8.0",
+    "react-router-dom": "^5.1.2",
+    "react-router-hash-link": "^1.2.2",
+    "react-scripts": "3.2.0",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "scripts": {
     "start": "react-scripts start",

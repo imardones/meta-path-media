@@ -1,0 +1,24 @@
+<svg class="svg-defs">
+  <defs>
+        <clipPath id="mandala-cp">
+          <polygon points="98 153 38 185 49 118 1 70 68 61 98 1 128 61 195 70 147 118 158 185"/>
+          <text x="0" y="30.2em">METAPATHMEDIA</text>
+        </clipPath>
+      
+    </defs>
+
+</svg>
+
+<svg>
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="00%" x2 ="0" y2="100%">
+      <stop stop-color="black" offset="0"/>
+      <stop stop-color="white" offset="1"/>
+    </linearGradient>
+
+    <mask id="masking" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+      <rect y="0.3" width="1" height=".7" fill="url(#gradient)" />
+      <circle cx=".5" cy=".5" r=".35" fill="white" />
+    </mask>
+  </defs>
+</svg>

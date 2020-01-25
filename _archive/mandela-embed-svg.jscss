@@ -1,0 +1,103 @@
+.mandala {
+    position: fixed;
+    display: block;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vw;
+    max-height: 1300px;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-attachment: fixed;
+    background-image: url('../assets/bnet.svg');
+    background-repeat: no-repeat;
+    transform-origin: 50% 50%;
+    // clip-path: ellipse(130px 140px at 40% 40%);
+    // transform-origin: 32% 37%;
+    // border-radius: 50% 50% 50% 50% / 30% 30% 60% 60%;
+    
+    animation: 20s launchEgg1;
+    //, 30s launchEgg2;
+
+    animation-fill-mode: forwards;
+    .rotate-enter-active { animation: 1s launchEgg reverse; }
+    .rotate-leave-active { animation: 1s launchEgg; }
+
+    @keyframes launchEgg1 {
+        0% { clip-path: ellipse(100% 100% at 1% 1%); transform: rotate(-1deg); }
+        25% { clip-path: ellipse(7% 5% at 60% 70%); }
+        50% { clip-path: ellipse(150% 125% at 40% 30%); transform: rotate(-180deg) }
+        75% { clip-path: ellipse(10% 6% at 50% 50%); transform: rotate(-360deg);}
+        100% { clip-path: ellipse(100px 200px at 25% 55%); transform: rotate(44deg); }
+    }
+
+    @keyframes launchEgg2 {
+        0% { clip-path: ellipse(200% 200% at 1% 1%); transform: rotate(-1deg); }
+        25% { clip-path: ellipse(75% 50% at 30% 20%); }
+        50% { clip-path: ellipse(50% 25% at 70% 45%); transform: rotate(-180deg) }
+        75% { clip-path: ellipse(25% 400% at 40% 60%); }
+        100% { clip-path: ellipse(10% 6% at 40% 30%); transform: rotate(-360deg);}
+    }
+
+    @keyframes launchEgg3 {
+        0% { clip-path: ellipse(200% 200% at 1% 1%); transform: rotate(-1deg); }
+        25% { clip-path: ellipse(75% 50% at 30% 20%); }
+        50% { clip-path: ellipse(50% 25% at 70% 45%); transform: rotate(-180deg) }
+        75% { clip-path: ellipse(10% 6% at 40% 30%); transform: rotate(-360deg);}
+        100% { clip-path: ellipse(25% 400% at 40% 60%); }
+    }
+
+    .mesh1, .mesh2, .mask {
+        width: 100vw;
+        height: 100vh * 2;
+        overflow: hidden;
+
+
+    }
+}
+    .mandala-svg {
+
+        
+
+    .mask {
+        background-color: rgba($color-inverse, 1);
+        clip-path: ellipse(25% 30% at 40% 40%);
+        fill: rgba($color-inverse, 1);
+        }
+    .mask, .a, .b, .c { fill: none; stroke-width: 0.2; transform-origin: center; }
+    .a { stroke: #808080; border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;}
+    .b { stroke: #5AC2AA; border-radius: 50% 50% 50% 50% / 60% 60% 41% 39%;}
+    .c { stroke: #5AC2AA; }
+    #layer-a { animation: ani-a 100s linear infinite; }
+    #layer-b { animation: ani-b 50s linear infinite; }
+    #layer-c { animation: ani-c 100s ease-in-out infinite; }
+
+    @keyframes ani-mask {
+        0% { transform: scale(2); }
+        50% { transform: scale(3.5); }
+        100% { transform: scale(2); }
+    }
+    @keyframes ani-a {
+        0% { transform: scale(2); }
+        50% { transform: scale(3.5); }
+        100% { transform: scale(2); }
+    }
+    @keyframes ani-b {
+        0% { transform: scale(2)skewX(1deg)rotate(1deg);}
+        50% { transform: scale(3)rotate(180deg)skewX(30deg); }
+        100% { transform: scale(2)rotate(360deg)skewX(1deg); }
+    }
+    @keyframes ani-c {
+        0% { transform: rotate(-90deg); }
+        25% { transform: rotate(-180deg); }
+        50% { transform: scale(.6); }
+        100% { transform: rotate(-360deg), scale(1); }
+    }
+
+}
+
+
+
+
+   // transform: translate(-20%, -20%) 
+// transform: translate(0, 0) 

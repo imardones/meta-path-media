@@ -1,0 +1,380 @@
+{
+    "services": [{
+        "headline": "full-stack engineering",
+        "src": "./icon-services-0.gif",
+        "deck": "W3C standards compliant, search-engine optimized code utilizing the latest and most appropriate technological solutions."
+    }, {
+        "headline": "user experience / interface",
+        "src": "./icon-services-1.gif",
+        "deck": "Interface and interactions designed and optimized to respond on the widest range of platforms, browsers and devices."
+    }, {
+        "headline": "multimedia production",
+        "src": "./icon-services-2.gif",
+        "deck": "Integrating video, audio, animation, photography and graphics for rich-media interactive experiences."
+    }, {
+        "headline": "information architecture",
+        "src": "./icon-services-3.gif",
+        "deck": "Hinging on good content strategy, data- schemes, case testing, wire-framing, for scalability, usability and findability."
+    }],
+    "projects": [{
+        "headline": "AdManger.Google",
+        "live_site": "https://admanager.google.com/home/",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-webmarketing.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "AdManger.Google",
+        "live_site": "https://admanager.google.com/home/",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-webmarketing.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "AdManger.Google",
+        "live_site": "https://admanager.google.com/home/",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-webmarketing.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "AdManger.Google",
+        "live_site": "https://admanager.google.com/home/",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-webmarketing.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "AdManger.Google",
+        "live_site": "https://admanager.google.com/home/",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-webmarketing.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "AdManger.Google",
+        "live_site": "https://admanager.google.com/home/",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-webmarketing.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "Saatchi & Saatchi Wellness",
+        "live_site": "UUUUUUUUU",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-newsletters.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "Careers.UN",
+        "live_site": "https://careers.un.org/lbw/Home.aspx",
+        "source_code": "xxxxx",
+        "src": "./wpi-careersun.png",
+        "style": "UNServiceCatalogue",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "GEN.com",
+        "live_site": "UUUUUUUUU",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-gen.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "The Arboleda",
+        "live_site": "UUUUUUUUU",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-thearboleda.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "SaatchiHealth",
+        "live_site": "UUUUUUUUU",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-saatchihealth.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "NaascNY",
+        "live_site": "UUUUUUUUU",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-naascny.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]},{
+        "headline": "TheSterlingMove",
+        "live_site": "UUUUUUUUU",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-thesterlingmove.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "ShootEmUpMedia",
+        "live_site": "UUUUUUUUU",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-shootemupmedia.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "KulebaExchange",
+        "live_site": "UUUUUUUUU",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-kulebaexchange.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "Intranet Sites",
+        "live_site": "UUUUUUUUU",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-intranetsites.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "UN Misc",
+        "live_site": "UUUUUUUUU",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-unmisc.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "myHROnline",
+        "live_site": "UUUUUUUUU",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-myhronline.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "GeierGroup",
+        "live_site": "UUUUUUUUU",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-geiergroup.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "christopherbollen",
+        "live_site": "UUUUUUUUU",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-christopherbollen.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "Careers.UN",
+        "live_site": "UUUUUUUUU",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-careersun.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "UN Service Catalogue",
+        "live_site": "UUUUUUUUU",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-unservicecatalogue.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "Protegrity",
+        "live_site": "UUUUUUUUU",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-protegrity.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}, {
+        "headline": "Saatchi Health",
+        "live_site": "UUUUUUUUU",
+        "source_code": "SSSSSSSS",
+        "src": "./wpi-saatchihealth.png",
+        "style": "22222222222",
+                "deck": "DetailDetail",
+        "tags": [
+            "full-stack development",
+            "front-end development",
+            "mobile-first",
+            "special-project",
+            "native app",
+            "API",
+            "consulted"
+    ]}]
+}

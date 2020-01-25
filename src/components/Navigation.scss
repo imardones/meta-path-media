@@ -1,0 +1,236 @@
+@import '../App.scss';
+
+#nav {
+    position: fixed;    
+    right: 0;
+	top: -$corner;
+	padding: .5vw;
+	margin: 0 2vmin 0 0;
+	z-index: 10;
+	// @include cta-material;
+	@include corners;
+	@include shadows;
+	backdrop-filter: hue-rotate(36deg) saturate(40) blur(2px) contrast(1) brightness(.4);
+	display: inline-block;
+	background-position: 25% 75%;
+	// filter: invert(1);
+
+
+
+
+	#indicator { 
+		background-color: rgba($color-inverse, .6);
+		display: block;
+		height: 2px; 
+		margin: 6px $corner 0; 
+		position: absolute;
+		left: 0; 
+		width: 60px;
+		@include corners(2px);
+		-webkit-transition: opacity 0.4s linear;
+		moz-transition: opacity 0.4s linear;
+	}
+
+	.breadcrumb { visibility: hidden; display: none; 
+		a {
+			color: $color-highlight;
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-flow: row;
+
+		li {
+			list-style: none;
+			display: block;
+			position: relative;
+			height: fit-content;
+		}
+
+		a {
+			color: rgba($color-inverse, .9);
+			text-decoration: none;
+			padding: 1vh 2vw .2vw;
+			margin: 0 1px;
+			height: fit-content;
+			text-decoration: none; 
+			font-weight: normal;
+			align-items: baseline;
+			box-sizing: border-box;
+			display: inline-block;
+			font-size: 1.1em;
+			line-height: 1em;
+		}
+
+		.btn_menu, .sub-nav, .btn_menu img {
+			visibility: hidden;
+			display: none;
+		}
+
+	} // closing ul
+} // closing MainNav
+
+
+/* MOBLIE NAV ------------ */
+@include mq-smartphone {
+	#navigation {
+		flex-flow: column;
+		margin: 0;
+		padding: 4vm;
+		top: 1vw;
+		left: 1vw;
+		bottom: unset;
+		right: 1vw;
+		position: fixed;
+		width: 97vw;
+		transition: bottom 1sec ease-in, left 1sec ease-in;
+
+		.btn_menu {
+			display: flex;
+			padding: 1vw 0 1vw 0;
+			width: 92vw;
+			justify-content: space-between;
+			flex-direction: row;
+
+			.breadcrumb { display: inline-block; padding: 40px 0 .5em 0; font-size: 1.3em; }
+
+			button {
+				border: 1px solid rgba($color-inverse, .6);
+				position: absolute;
+				right: -2vw;
+				// top: -2vw;
+				@include cta-material;
+				@include shadows;
+				padding: .8em;
+				outline: none;
+				z-index: 100;
+				img, span {
+					width: 20px;
+					height: 20px;
+				}
+				img {
+					display: block;
+				}
+			}
+		} // closing btn_menu
+
+		ul {
+			flex-direction: column;
+			display: flex;
+			position: relative;
+			margin: 0;
+			padding: 0;
+
+			li {
+				margin: 0;
+				padding: 0;
+				font-size: 1.5em;
+
+			}
+			
+			.sub-nav {
+				display: flex;
+				flex-flow: column;
+				flex-direction: column;
+				li  {
+					display: block;
+					clear: both;
+					padding-left: 1.2em;
+					a {
+						font-size: .8em;
+					}
+					::before {
+						content: "• ";
+					}
+				}
+			}
+		}
+
+
+		&.collapsed.not-scrolling {
+			background: transparent;
+			box-shadow: none;
+			.breadcrumb {
+				visibility: hidden;
+			}
+		}
+
+		/* NAV SHELF COLLAPSED ------------- */ 
+		&.collapsed {
+
+			.icon_close, ul, li, .sub-nav, .btn_home {
+				visibility: hidden;
+				display: none;
+			}
+
+			li.btn_menu, ul.nav { 
+				display: flex; 
+				flex-direction: column;
+				visibility: visible;
+			}
+
+			li.btn_menu img.icon_menu, .breadcrumb {
+				display: block;
+				width: 20px;
+				height: 20px;
+				visibility: visible;
+			}
+
+		} // closing collapsed
+
+		/* NAV SHELF EXPANDED ------------- */ 
+		&.expanded {
+			bottom: 1vw;
+			transition: bottom 1sec ease-in;			
+
+			.nav  {
+				padding: 2em 0 0 10%;
+			}
+
+			ul.sub-nav, ul.sub-nav li, .nav .breadcrumb {
+				visibility: visible;
+				color: $color-highlight;
+			}
+
+			ul li .btn_home, .btn_home a {
+				display: none;
+				visibility: hidden;
+			}
+
+			.nav .breadcrumb, .btn_menu {
+				display: block;
+				visibility: visible;
+			}
+
+			.btn_menu {
+
+				button {
+					top: -6vw;
+					right: 8vw;
+				}
+
+				.icon_close {
+					display: block;
+					width: 20px;
+					height: 20px;
+					color: rgba($color-inverse, .9);
+					font-size: 1.2em;
+					float: right;
+				}
+
+				.icon_menu {
+					display: none;
+					visibility: hidden;
+				}
+
+			} // closing btn_menu
+			  
+
+	
+		} // closing expanded
+
+	} // closing navigation
+} // closing MQ
